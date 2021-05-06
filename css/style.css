@@ -17,19 +17,21 @@
 #scoreBox{
     position: absolute;
     top: 9px;
-    right: 200px;
+    right: 40px;
     font-size: 39px;
     font-weight: bold;
     font-family: 'New Tegomin', serif;
+    color: azure;
 }
 
 #hiscoreBox{
     position: absolute;
     top: 59px;
-    right: 140px;
+    right: 40px;
     font-size: 39px;
     font-weight: bold;
     font-family: 'New Tegomin', serif;
+    color: whitesmoke;
 }
 
 #board{

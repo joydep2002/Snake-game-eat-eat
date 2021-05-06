@@ -45,7 +45,7 @@ function gameEngine(){
         gameOverSound.play();
         musicSound.pause();
         inputDir =  {x: 0, y: 0}; 
-        alert("Game Over. Press any key to play again!");
+        alert("Khela Sesh. Press any key to play again!");
         snakeArr = [{x: 13, y: 15}];
         musicSound.play();
         score = 0; 
@@ -58,7 +58,7 @@ function gameEngine(){
         if(score>hiscoreval){
             hiscoreval = score;
             localStorage.setItem("hiscore", JSON.stringify(hiscoreval));
-            hiscoreBox.innerHTML = "HiScore: " + hiscoreval;
+            hiscoreBox.innerHTML = "HighScore: " + hiscoreval;
         }
         scoreBox.innerHTML = "Score: " + score;
         snakeArr.unshift({x: snakeArr[0].x + inputDir.x, y: snakeArr[0].y + inputDir.y});
@@ -111,7 +111,7 @@ if(hiscore === null){
 }
 else{
     hiscoreval = JSON.parse(hiscore);
-    hiscoreBox.innerHTML = "HiScore: " + hiscore;
+    hiscoreBox.innerHTML = "HighScore: " + hiscore;
 }
 
 window.requestAnimationFrame(main);
